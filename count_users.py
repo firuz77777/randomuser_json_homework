@@ -9,6 +9,7 @@ def count_users(data:dict)->int:
     Returns:
         int: The number of users
     """
+    for i in data['users']:
+        return len(i)
     # Count the number of users
-
-    return 0
+data = read_json('users.json')
