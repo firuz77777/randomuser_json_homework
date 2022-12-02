@@ -8,6 +8,13 @@ def get_male_users_from_country(data:dict, country:str)->list:
 
         list: A list of users
     """ 
-    pass
+    q=[]
+    a = open('users.json').read
+    for i in a['users']:
+        if i['title'] == 'Mr':
+            q.append(i)
+    return q
+print(get_male_users_from_country('data', 'country'))
+
 
     
